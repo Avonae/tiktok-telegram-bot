@@ -1,4 +1,5 @@
-const Telegraf = require('node-telegram-bot-api');
+require('dotenv').config();
+const Telegraf = require('node-telegram-bot-api')	;
 const { ttdl } = require('btch-downloader');
 const util = require('util');
 const chalk = require('chalk');
@@ -38,7 +39,7 @@ app.on('error', (err) => {
 listenOnPort(port);
 
 // Bot config token 
-let token = 'YOUR_TOKEN_HERE'  //replace this part with your bot token
+let token = process.env.TELEGRAM_TOKEN;  // this is your token from .env file
 const bot = new Telegraf(token, { polling: true });
 let Start = new Date();
 
@@ -89,8 +90,7 @@ bot.onText(/^\/runtime$/, (msg) => {
 });
 bot.onText(/^\/start$/, (msg) => {
 const From = msg.chat.id;
-const caption = `
-Bot ini dirancang khusus untuk membantu Anda mendownload video TikTok secara otomatis. Cukup kirimkan URL video TikTok yang ingin Anda download, dan bot ini akan menyelesaikan tugasnya dengan cepat dan mudah!`
+const caption = `Send me the fucking link duuuuuuuuuuuuuuuuuuuuuuuuuuude`
 bot.sendMessage(From, caption);
 });
 
@@ -105,11 +105,8 @@ bot.on('message', async (msg) => {
         const data = await ttdl(url)
         const audio = data.audio[0]
         const { title, title_audio } = data;
-        await bot.sendVideo(From, data.video[0], { caption: title });
-        await sleep(3000)
-        await bot.sendAudio(From, audio, { caption: title_audio });
-        await sleep(3000)
-        await bot.sendMessage(From, 'Powered by @wtffry');
+        await bot.sendVideo(From, data.video[0]);
+	//await bot.sendVideo(From, data.video[0], { caption: title });
     } catch (error) {
         bot.sendMessage(From, 'Sorry, an error occurred while downloading the TikTok video.');
         logs(`[ ERROR ] ${From}: ${error.message}`, 'red');
