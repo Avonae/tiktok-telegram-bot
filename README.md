@@ -28,7 +28,7 @@ docker build -t tiktok-telegram-bot .
 4. Run the application using Node.js.
 
 ```shell
-ddocker run -d --name tiktok-telegram-bot tiktok-telegram-bot
+docker run -d --name tiktok-telegram-bot tiktok-telegram-bot
 ```
 
 5. Setup a new bot on Telegram by following the [official Telegram Bot documentation](https://core.telegram.org/bots#botfather). Obtain the bot token for your newly created bot.
