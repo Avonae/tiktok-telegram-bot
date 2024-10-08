@@ -16,7 +16,7 @@ git clone https://github.com/Avonae/tiktok-telegram-bot.git
 2. Navigate to the project directory.
 
 ```shell
-cd tiktok-tele-bot
+cd tiktok-telegram-bot
 ```
 
 3. Install the necessary dependencies using npm.
