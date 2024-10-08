@@ -22,7 +22,7 @@ cd tiktok-telegram-bot
 3. Buil the image.
 
 ```shell
-docker build -t tiktok-telegram-bot
+docker build -t tiktok-telegram-bot .
 ```
 
 4. Run the application using Node.js.
