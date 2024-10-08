@@ -19,10 +19,10 @@ git clone https://github.com/Avonae/tiktok-telegram-bot.git
 cd tiktok-telegram-bot
 ```
 
-3. Install the necessary dependencies using npm.
+3. Buil the image.
 
 ```shell
-docker run -d tiktok-telegram-bot
+docker build -t tiktok-telegram-bot
 ```
 
 4. Run the application using Node.js.
