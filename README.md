@@ -1,4 +1,4 @@
-# TIKTOK-TELE-BOT
+# TIKTOK-TELEGRAM-BOT
 
 A simple Telegram bot that allows you to download TikTok videos directly from Telegram. The bot uses the popular Telegram Bot API and TikTok API to fetch and download videos from TikTok.
 #### [Try Demo](https://t.me/tikdl_tele_bot)
