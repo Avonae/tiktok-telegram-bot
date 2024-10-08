@@ -10,25 +10,25 @@ To get started with the Telegram Bot Tiktok Downloader, follow the steps below:
 1. Clone this repository to your local machine.
 
 ```shell
-$ git clone https://github.com/Avonae/tiktok-telegram-bot.git
+git clone https://github.com/Avonae/tiktok-telegram-bot.git
 ```
 
 2. Navigate to the project directory.
 
 ```shell
-$ cd tiktok-tele-bot
+cd tiktok-tele-bot
 ```
 
 3. Install the necessary dependencies using npm.
 
 ```shell
-$ docker run -d tiktok-telegram-bot
+docker run -d tiktok-telegram-bot
 ```
 
 4. Run the application using Node.js.
 
 ```shell
-$ docker run -d tiktok-telegram-bot
+docker run -d tiktok-telegram-bot
 ```
 
 5. Setup a new bot on Telegram by following the [official Telegram Bot documentation](https://core.telegram.org/bots#botfather). Obtain the bot token for your newly created bot.
